@@ -39,7 +39,7 @@ box-sizing: border-box;
 
 
 .intro-section{
-    background-image: url("../images/bag.jpg");
+    background-image: url("images/bag.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
