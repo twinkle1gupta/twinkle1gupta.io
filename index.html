@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crypto | Home</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/help_icon.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header-title">An improved crypto system</h1>
+                <nav class="nav-item-home">
+                    <a href="https://linktr.ee/twinkle_gupta2911" 
+                        target="_blank">
+                                        <img src="/images/contact.png" 
+                                        heigth="10" 
+                                        width="20">
+                    </a>
+                
+                    <a href="/help.html">
+                        <img src="/images/home.png"  
+                            width="20" 
+                            alt="Home">
+                    </a>
+                </nav>
+        </header>
+        
+        <hr>
+        <div class="intro-section"></div>
+        <div class="bg-text">
+            <p class="introdunction-para">Welcome to the world where all your data is <strong>Secure, Encrypted, Unhackable!</strong></p>
+        <p>This is an imporved encryption system written python</p>
+        <hr>
+        <p>This is college project to implement Cryptography in python. Alongside GUI</p>
+        </div>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="/images/main_win_dark.png" style="width:100%">
+      <div class="text">Dark theme</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="/images/main_win_light.png" style="width:100%">
+      <div class="text">Ligth theme</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="/images/decrypt_dark.png" style="width:100%">
+      <div class="text" >Decrypt Screen</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="/images/encrypt_light.png" style="width:100%">
+        <div class="text" >Encryption Screen</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="/images/help.png" style="width:100%">
+        <div class="text" >user friendly GUI</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="/images/browse_file.png" style="width:100%">
+        <div class="text" >File encryption also supported</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+        
+
+    <footer class="foot">
+        <p class="foot-para">check our project on github</p>
+        <p class="foot-para">
+        <a target="_blank" href="https://github.com/twinkle1gupta/Encryption_PRoject/tree/main/Encryption-project"><img src="/images/github-logo.png" alt="github image" width="100" height="100"></a>
+        </p>
+    </footer>
+        
+
+    </body>
+</html>
